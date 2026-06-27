@@ -16,6 +16,7 @@ final class ScannerViewModel {
 
     let captureSession = AVCaptureSession()
     private let metadataOutput = AVCaptureMetadataOutput()
+    private var scannerDelegate: ScannerDelegate?  // strong ref so delegate isn't deallocated
 
     // MARK: - Network
 
@@ -69,6 +70,9 @@ final class ScannerViewModel {
             AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
                 Task { @MainActor in
                     self?.cameraPermissionGranted = granted
+                    if granted {
+                        self?.startScanning()
+                    }
                 }
             }
         default:
@@ -102,9 +106,10 @@ final class ScannerViewModel {
             return
         }
         captureSession.addOutput(metadataOutput)
-        metadataOutput.setMetadataObjectsDelegate(ScannerDelegate { [weak self] objects in
+        scannerDelegate = ScannerDelegate { [weak self] objects in
             self?.handleDetectedObjects(objects)
-        }, queue: DispatchQueue.main)
+        }
+        metadataOutput.setMetadataObjectsDelegate(scannerDelegate!, queue: DispatchQueue.main)
         metadataOutput.metadataObjectTypes = Self.supportedMetadataTypes
 
         captureSession.commitConfiguration()
