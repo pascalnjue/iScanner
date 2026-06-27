@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		000000000000000000000120 /* Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF94C90F2FEFEA8C000BE3E1 /* Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -31,16 +31,8 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000010 /* Scanner */,
-				000000000000000000000020 /* Products */,
+				CF94C90F2FEFEA8C000BE3E1 /* Scanner.app */,
 			);
-			sourceTree = "<group>";
-		};
-		000000000000000000000020 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				000000000000000000000120 /* Scanner.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +53,7 @@
 			);
 			name = Scanner;
 			productName = MyApp;
-			productReference = 000000000000000000000120 /* Scanner.app */;
+			productReference = CF94C90F2FEFEA8C000BE3E1 /* Scanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -89,7 +81,7 @@
 			mainGroup = 000000000000000000000001;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 90;
-			productRefGroup = 000000000000000000000020 /* Products */;
+			productRefGroup = 000000000000000000000001;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
