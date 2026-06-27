@@ -19,7 +19,7 @@ on your Mac. No cloud, no accounts, just your local WiFi.
 
 ## Requirements
 
-- iOS 27.0+ (built with Xcode 26 beta)
+- iOS 17.0+
 - iPhone or iPad with a camera
 
 ## Setup
