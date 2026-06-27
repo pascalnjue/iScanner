@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Scanner Companion — Listens for scanned text from the iOS Scanner app
+iScanner Companion — Listens for scanned text from the iScanner iOS app
 and types it into whatever field is focused on your Mac.
 
 Usage: python3 scanner_companion.py [--port PORT]

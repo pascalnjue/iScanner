@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		CF94C90F2FEFEA8C000BE3E1 /* Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF94C90F2FEFEA8C000BE3E1 /* iScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		000000000000000000000010 /* Scanner */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Scanner;
+			path = iScanner;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -31,7 +31,7 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000010 /* Scanner */,
-				CF94C90F2FEFEA8C000BE3E1 /* Scanner.app */,
+				CF94C90F2FEFEA8C000BE3E1 /* iScanner.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +51,9 @@
 			fileSystemSynchronizedGroups = (
 				000000000000000000000010 /* Scanner */,
 			);
-			name = Scanner;
-			productName = MyApp;
-			productReference = CF94C90F2FEFEA8C000BE3E1 /* Scanner.app */;
+			name = iScanner;
+			productName = iScanner;
+			productReference = CF94C90F2FEFEA8C000BE3E1 /* iScanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -249,7 +249,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Scanner needs camera access to scan barcodes and QR codes.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "iScanner needs camera access to scan barcodes and QR codes.";
+				INFOPLIST_KEY_NSAllowsLocalNetworking = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -263,7 +264,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pascalnjue.Scanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pascalnjue.iScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -289,7 +290,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "Scanner needs camera access to scan barcodes and QR codes.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "iScanner needs camera access to scan barcodes and QR codes.";
+				INFOPLIST_KEY_NSAllowsLocalNetworking = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -303,7 +305,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pascalnjue.Scanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pascalnjue.iScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;

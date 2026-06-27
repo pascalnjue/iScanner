@@ -1,5 +1,5 @@
 # Xcode user data
-*.xcuserdata
+xcuserdata/
 *.xcworkspace/xcuserdata/
 
 # Build artifacts

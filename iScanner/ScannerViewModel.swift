@@ -1,6 +1,5 @@
 import SwiftUI
 import AVFoundation
-import Network
 
 @MainActor
 @Observable

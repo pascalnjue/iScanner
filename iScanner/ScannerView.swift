@@ -17,7 +17,7 @@ struct ScannerView: View {
                     resultsList
                 }
             }
-            .navigationTitle("Scanner")
+            .navigationTitle("iScanner")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -37,7 +37,7 @@ struct ScannerView: View {
             .sheet(isPresented: $showSettings) {
                 SettingsView(viewModel: viewModel)
             }
-            .alert("Scanner Error", isPresented: .init(
+            .alert("iScanner Error", isPresented: .init(
                 get: { viewModel.errorMessage != nil },
                 set: { if !$0 { viewModel.errorMessage = nil } }
             )) {

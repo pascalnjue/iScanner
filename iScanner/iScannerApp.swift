@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ScannerApp: App {
+struct iScannerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
